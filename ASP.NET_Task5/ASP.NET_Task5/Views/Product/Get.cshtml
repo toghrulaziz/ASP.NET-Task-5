@@ -1,0 +1,33 @@
+﻿@model Product
+<link href="~/css/get.css" rel="stylesheet" />
+
+<div class="product-details">
+    <div class="title-container">
+        <h2 class="product-title">Product Details</h2>
+    </div>
+    <div class="flex-container">
+        <div class="product-image">
+            <img src="@Model.ImageUrl" alt="Product Image">
+        </div>
+        <div class="product-info">
+            <p><span class="strong-text">Title:</span> @Model.Title</p>
+            <p><span class="strong-text">Description:</span> @Model.Description</p>
+            <p><span class="strong-text">Price:</span> <span class="price-text">@Model.Price $</span></p>
+            <p><span class="strong-text">Category:</span> @(Model.Category != null ? Model.Category.Name : "No Category")</p>
+            <p>
+                <span class="strong-text">Tags:</span>
+                @if (Model.Tags != null && Model.Tags.Any())
+                {
+                    foreach (var tag in Model.Tags)
+                    {
+                        <span>@tag.Name</span>
+                    }
+                }
+                else
+                {
+                    <span>No tags available</span>
+                }
+            </p>
+        </div>
+    </div>
+</div>

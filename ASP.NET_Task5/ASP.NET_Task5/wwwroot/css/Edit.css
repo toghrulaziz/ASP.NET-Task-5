@@ -1,0 +1,54 @@
+﻿.edit-product {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+    .edit-product h2 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .edit-product .form-group {
+        margin-bottom: 15px;
+    }
+
+    .edit-product label {
+        display: block;
+        font-weight: bold;
+    }
+
+    .edit-product input[type="text"],
+    .edit-product textarea,
+    .edit-product select {
+        width: calc(100% - 12px);
+        padding: 8px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+    }
+
+    .edit-product .text-danger {
+        color: red;
+        font-size: 12px;
+    }
+
+    .edit-product .btn-primary {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        background-color: #007bff;
+        color: #fff;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+        .edit-product .btn-primary:hover {
+            background-color: #0056b3;
+        }
